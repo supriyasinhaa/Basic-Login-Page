@@ -1,5 +1,5 @@
 # Basic-Login-Page
-This repository contains a basic login page that one can create using the mentioned techstack below:-
+This repository contains a basic login page that one can create using the mentioned techstack in the technology section below:-
 # Technology
 The technology we can use are:
 
