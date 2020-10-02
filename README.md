@@ -14,4 +14,6 @@ The technology we can use are:
 # Tasks
 * Require the username and password on the login page.
 
-* Require full name, email address, username and a password on the sign up page.
+* Require full name, email address, username and a password on the sign up page.<br>
+# A sample screenshot of Login Page
+<img src="https://github.com/kkkkkabir/Basic-Login-Page/blob/master/Login-Page-1/Basic_Login_Page_ss.png" ></img>
