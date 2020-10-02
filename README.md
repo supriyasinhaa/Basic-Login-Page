@@ -1,13 +1,14 @@
 # Basic-Login-Page
 >This repository contains basic login page.
->Technology we can use are :
-<Br>
-#### ✏️ HTML
-#### ✏️ CSS
-#### ✏️ JAVASCRIPT
-#### ✏️ BOOTSTRAP
-#### ✏️ NODE JS
-#### ✏️ DJANGO
+# Technology
+Technology we can use are :
+
+✏️ HTML
+✏️ CSS
+✏️ JAVASCRIPT
+✏️ BOOTSTRAP
+✏️ NODE JS
+✏️ DJANGO
 
 📋 📋 And many more
 
