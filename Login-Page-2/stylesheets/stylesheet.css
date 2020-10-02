@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#556270, #FF6B6B);
+
+    font-weight: normal;
+}
+
+.container {
+    position: absolute;
+    width: 50rem;
+    height: 33rem;
+    left: 20%;
+    top: 10%;
+    border-radius: 3rem;
+
+    background: linear-gradient(120deg, rgb(229, 93, 135), rgb(95, 195, 228));
+
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    top: 1.5rem;
+    background: linear-gradient(120deg, #3b5998, #FFFFFF);
+    width: 360px;
+    height: 60%;
+    border-radius: 1rem;
+    margin: 0 auto 100px;
+    padding: 45px;
+
+
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    font-weight: lighter;
+}
+
+.form-body label {
+
+    font-size: 1rem;
+
+
+}
+
+.form-body input {
+    position: relative;
+    width: 100%;
+    padding: 10px 5px;
+    margin: 0 0 25px 0;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 1rem;
+
+}
+
+.form-body button {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(#4CA1AF, #C4E0E5)
+}
+
+.social {
+    font-size: 30px;
+    margin-top: 3rem;
+    text-align: center;
+
+
+
+}
+
+.facebook {
+    margin-right: 1rem;
+    color: #32508e;
+
+}
+
+.twitter {
+    margin-right: 1rem;
+    color: #55acee;
+}
+
+.google {
+
+    color: #dd4b39;
+}
