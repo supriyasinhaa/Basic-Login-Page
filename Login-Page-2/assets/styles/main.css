@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all .5s ease-in-out;
+}
+
+body{
+    background-color: rgba(228, 232, 236, 0.719);
+    line-height: 1.1rem;
+    font-family: sans-serif;
+}
+
+input, button{
+    border: none;
+    outline: none;
+    padding: 5px 7px;
+}
+input[type='submit']{
+    background:linear-gradient(180deg,rgb(58, 123, 223, 0.9),rgb(54, 89, 170, 0.9));
+    font-size: 0.95rem;
+    color:#fff;
+    border-radius: 6px;
+    padding: 7px;
+    width: 100%;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+    background:linear-gradient(0deg,rgb(58, 123, 223, 0.9),rgb(54, 89, 170, 0.9));
+}
+input[type="text"],
+input[type="password"],
+input[type="number"]{
+    padding: 8px 8px;
+    border-radius:10px;
+    background-color: rgba(211, 211, 211, 0.788);
+    width: 200px;
+    height: 25px;
+    font-size: 0.95rem;
+    color: darkslategray;
+}
+input::placeholder{
+    
+    color: gray;
+}
+
+input:active,
+input:target {
+    border: 1px solid darkgray;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 200px;
+    padding: 10px;
+}
+.box{
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    box-shadow: 0 0 10px 10px lightgray;
+    
+}
+
+#register-form{
+    display: none;
+    height: 275px;
+}
+
+.btn-bar{
+    position: absolute;
+    left:-18%;
+}
+.btn-bar .btn-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background:linear-gradient(0deg, rgb(54, 89, 170, 0.9),rgb(58, 123, 223, 0.9));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 0 3px 5px rgba(228, 232, 236, 0.795);
+}
+
+.btn-circle:hover{
+    cursor: pointer;
+    background:linear-gradient(180deg, rgb(54, 89, 170, 0.9),rgb(58, 123, 223, 0.9));
+}
+
+#bar-register{
+    top: 22%;
+}
+
+@media only screen and (max-width:786px){
+    .btn-bar{
+        position: absolute;
+        left:-13%;
+    }
+}
