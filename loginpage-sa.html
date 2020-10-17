@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup</title>
+	<style>
+		body{
+			background-image: url(img1.jpg);
+			background-size: cover;
+			background-position: center;
+			overflow: hidden;
+			background-attachment: fixed;
+
+		}
+		.tab {
+  			
+  			width: 450px;
+  			border:none;
+  			
+  			text-align: center;
+  			padding:30px;
+			margin:auto;
+
+
+		}
+		.signintab, .signuptab{
+			
+			border-radius: 0px;
+			color: black;
+			text-align: center;
+			border: 2px solid #555555;
+			
+
+
+		}
+		.signintab, .signuptab:hover {
+ 			background-color: #555555;
+  			color: white;
+  			transition: 0.6s;
+  			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.signintab, .signuptab.active {
+ 			background-color: #555555;
+  			color: white;
+  			transition: 0.6s;
+  			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.signup,.signin{
+			
+			width: 450px;
+			box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+			background:#fff;
+			padding:20px;
+			margin: auto;
+			text-align: center; 
+			display: none;
+			transition: 0.6s ease;
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		}
+		.input-box{
+			
+			width: 95%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #999;
+			outline: none;
+			border: none;
+  			border-bottom: 0.5px solid grey;
+		}
+		button{
+			color: #fff;
+			margin:10px 0;
+			padding: 10px;
+			width:200px;
+			border-radius: 20px;
+			border: none;font-size: 15px;
+			outline: none;
+			cursor: pointer;
+		}
+		.signupbtn{
+			background-color: red;
+
+		}
+
+	</style>
+	<script>
+
+		function selectTab(tabIndex) {
+			
+  //Hide All Tabs
+		  	document.getElementById('Tab1Content').style.display="none";
+		  	document.getElementById('Tab2Content').style.display="none";
+		   
+		  //Show the Selected Tab
+		  	document.getElementById('Tab' + tabIndex + 'Content').style.display="block";
+		  
+    
+		}
+
+
+	</script>
+</head>
+<body>
+	
+	<div class="tab">
+		<button  class="signintab"  onClick="JavaScript:selectTab(1);">Sign-In</button>
+		<button class="signuptab" onClick="JavaScript:selectTab(2);">Sign-Up</button>
+	</div>
+
+	<div id="Tab1Content" class="signin">
+		
+		<form>
+			
+			<input type="email" name="Email" class="input-box" placeholder="Enter your Email"><br>
+			<input type="password" name="Password" class="input-box" placeholder="Enter your password"><br>
+			<p><a href="">Forgot Password?</a></p>
+			<button type="button" class="signupbtn">Sign In</button>
+		</form>
+	</div>
+
+	<div id="Tab2Content" class="signup">
+		
+			<form>
+
+			<input type="name" name="Name" class="input-box" placeholder="Full Name"><br>
+			<input type="email" name="Email" class="input-box" placeholder=" Enter your Email"><br>
+			<input type="name" name="username" class="input-box" placeholder="Type your username"><br>
+			<input type="password" name="Password" class="input-box" placeholder="Set password"><br>
+			<input type="password" name="Password" class="input-box" placeholder="Confirm password"><br>
+			<p><span><input type="checkbox" name="Checkbox" class="checkbox"></span>I agree to the terms and condition</p>
+			<button type="button" class="signupbtn">Sign Up</button>
+		</form>
+			
+	</div>
+
+</body>
+</html>
