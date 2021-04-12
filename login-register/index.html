@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>WEBPORTAL</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-1"></div>
+              <div class="col-md-6 col-10">
+                <!-- Material form login -->
+                <div class="card">
+
+                    <h5 class="card-header info-color white-text text-center py-4">
+                    <strong>Sign in</strong>
+                    </h5>
+                    <div class="alert">Your message has been sent</div>
+                    <!--Card content-->
+                    <div class="card-body px-lg-5 pt-0">
+                
+                    <!-- Form -->
+                    <form class="text-center" style="color: #757575;" action="#!" id="loginform">
+                
+                        <!-- Email -->
+                        <div class="md-form">
+                        <input type="email" id="FormEmail" value="" placeholder="xyz@gmail.com" class="form-control" required>
+                        <label for="materialLoginFormEmail">E-mail</label>
+                        </div>
+                
+                        <!-- Password -->
+                        <div class="md-form">
+                        <input type="password" id="FormPassword" placeholder="password" value="" class="form-control" required>
+                        <label for="materialLoginFormPassword">Password</label>
+                        </div>
+                
+                        <div class="d-flex justify-content-around">
+                        <div>
+                            <!-- Remember me -->
+                            <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+                            <label class="form-check-label" for="materialLoginFormRemember">Remember me</label>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Forgot password -->
+                            <a href="" data-toggle="modal" data-target="#myModal">Forgot password?</a>
+                        </div>
+                        </div>
+                
+                        <!-- Sign in button -->
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" onclick="signInform()" id="signIn" type="submit">Sign in</button>
+                
+                        <!-- Register -->
+                        <p>Not a member?
+                        <a href="register.html">Register</a>
+                        </p>   
+                    </form>
+                    <!-- Form -->
+                
+                    </div>
+                
+                </div>
+                <!-- Material form login -->
+              </div>
+              <div class="col-md-3 col-1"></div>
+          </div>
+      </div>
+
+
+      <!-- Button to Open the Modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button> -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Forgot Password?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="justify">
+            <p>Please enter your email address below and we will send you information to recover your account</p>
+          </div>
+          <div class="md-form">
+            <input type="email" id="FormEmailReset" value="" placeholder="xyz@gmail.com" class="form-control" required>
+            <!-- <label for="materialLoginFormEmail">E-mail</label> -->
+            </div>
+            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" onclick="reset()" id="reset" type="submit">Reset</button>
+                
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- index.js -->
+    <script src="index.js"></script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
